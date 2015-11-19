@@ -1,3 +1,9 @@
+<?php  
+   session_start();
+   ob_start();
+?>  
+
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,6 +36,16 @@
                             <span class="icon-bar"></span>
                         </button>
                         <a class="navbar-brand" href="#">ElevenOne Foods</a>
+                        <div id="userPanel">
+                            <?php 
+                                if(@$_SESSION['username']){
+                                    echo "<strong>".$_SESSION['username']."</strong>";
+                                    echo "<a href='logout.php'><button class='text-center form-btn form-btn' style='width: 80px; height: 30px; padding: 5px; font-size: 0.7em; float: right;' >Logout</button></a>";
+                                }else{
+                                    echo "<strong>Hello Guest!</strong>";  
+                                }
+                            ?>
+                        </div>
                     </div>
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
