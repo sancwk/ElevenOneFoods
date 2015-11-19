@@ -875,6 +875,8 @@ MEDIA QUERIE DESKTOP
     margin:0 auto 30px;
     overflow:hidden;
 }
+
+
 .box.login
 {
     height:300px;
@@ -895,7 +897,6 @@ MEDIA QUERIE DESKTOP
 .box footer
 {
     /*background:#eff4f6;*/
-    border-top:1px solid #fff;
     padding:14px 30px 0px 21px;
     overflow:hidden;
     height:auto;
@@ -1065,11 +1066,12 @@ footer#main{
 .rightBlock{
     width: 35%;
     padding: 20px;
-    height: auto;
+    height: 300px;
+    margin-top: 2px;
     float: right;
     border:1px solid #fff;
     border-radius: 5px;
-    background-color: rgba(185, 185, 185, 0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 }
 #guestUser, #user {
     z-index: 1;
@@ -1107,5 +1109,15 @@ footer#main{
     left: 0px;
     width: 1366px;
     height: 768px;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(25, 25, 25, 0.9);
+}
+
+#userPanel{
+    padding-top: 13px;
+    display: inline-block;
+    position: fixed;
+    font-size: 1em;
+    width: 15%;
+    height: 50px;
+    left: 30%;
 }
