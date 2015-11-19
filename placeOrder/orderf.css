@@ -1,0 +1,80 @@
+body {
+	background-color: #ff9900;
+	background-image:url(food.jpg);
+}
+
+.form {
+	position:absolute;
+	left: 10px;
+	top: 90px;
+	border:solid;
+	
+    border-collapse: separate;
+    border-spacing: 30px 6px;
+	background-color: transparent;
+    background-image:url(back.jpg);
+
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+	font-weight:bold;
+	
+}
+
+.td {
+	text-align:left;
+	background-color:transparent;
+	
+	
+}
+
+.form input, textarea {
+	background-color: rgba(255,255,255,0.3);
+	border: 1px solid rgba(122, 192, 0, 0.15); 
+	padding: 7px;
+	font-family: Arial, Helvetica, sans-serif ;
+	color: rgba(75,75,75,1); 
+	font-size: 14px; 
+	color:white;
+     
+	
+	-webkit-border-radius: 5px;
+	
+}
+
+.drop_down_list {
+	-webkit-appearance: button;
+	-webkit-border-radius: 5px;
+	background-image:url(select-arrow.png);
+	background-position:220px;
+	background-repeat:no-repeat;
+	background-color: black;
+	padding: 7px;
+	width: 254px;
+  	border: 0px solid rgba(255, 255, 255, 1);
+	font-family: Arial, Helvetica, sans-serif;
+	color:white;
+}
+
+.form input:focus  {
+	background-color: rgba(254,138,61,0.2);
+	
+	
+}
+
+/*reservation table in resevation_table.php*/
+.reservation_table {
+	position: absolute;
+	top: 200px;
+	left: 220px; 
+}
+
+
+
+.font{
+	font-size: 40px;
+	font-weight:bold;
+	color: white;
+	
+
+	
+}
