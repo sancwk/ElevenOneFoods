@@ -60,7 +60,7 @@
 		                    		</thead>
 		                    		<tbody>
 										<?php 
-											include 'dbConnect.php';
+											include '../dbConnect.php';
 											
 											$data = $conn -> query("SELECT * FROM product");
 
