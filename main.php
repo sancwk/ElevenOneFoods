@@ -93,7 +93,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                        <img src="images/food_icon01.jpg"  width="250" height="220">
                        <div class="img-section-space"></div>
                        <img src="images/food_icon05.jpg"  width="250" height="220">
-                       <img src="images/corn.jpg"  width="250" height="220">
+                       <img src="images/seeds.jpg"  width="250" height="220">
                    </div>
                 </div>
             </div>
@@ -119,83 +119,61 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                                 <li class="filter" data-filter="dinner">Dinner</li>
                             </ul><!-- @end #filter-list -->
                             <ul id="portfolio">
-                                <li class="item breakfast"><img src="images/food_icon01.jpg" alt="Food" >
-                                    <h2 class="white">$20</h2>
-                                </li>
-
-                                <li class="item dinner special"><img src="images/food_icon02.jpg" alt="Food" >
-                                    <h2 class="white">$20</h2>
-                                </li>
-                                <li class="item dinner breakfast"><img src="images/food_icon03.jpg" alt="Food" >
-                                    <h2 class="white">$18</h2>
-                                </li>
-                                <li class="item special"><img src="images/food_icon04.jpg" alt="Food" >
-                                    <h2 class="white">$15</h2>
-                                </li>
-                                <li class="item dinner"><img src="images/food_icon05.jpg" alt="Food" >
-                                    <h2 class="white">$20</h2>
-                                </li>
-                                <li class="item special"><img src="images/food_icon06.jpg" alt="Food" >
-                                    <h2 class="white">$22</h2>
-                                </li>
-                                <li class="item desert"><img src="images/food_icon07.jpg" alt="Food" >
-                                    <h2 class="white">$32</h2>
-                                </li>
-                                <li class="item desert breakfast"><img src="images/food_icon08.jpg" alt="Food" >
-                                    <h2 class="white">$38</h2>
-                                </li>
+                                <a href="placeOrder" title="Click to buy!"><li class="item breakfast"><img src="images/briyani.jpg" alt="Food" >
+                                    <h2 class="white">Rs.300</h2>
+                                </li></a>
+                                
+                                                                                        
+                             
+                                <a href="placeOrder" title="Click to buy!"><li class="item breakfast"><img src="images/fried rice.jpg" alt="Food" >
+                                    <h2 class="white">Rs.280</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"><li class="item desert"><img src="images/Watalappan.jpg" alt="Food" >
+                                    <h2 class="white">Rs.170</h2>
+                                </li></a>
+                                
+                                <a href="placeOrder" title="Click to buy!"><li class="item special"><img src="images/pasta.jpg" alt="Food" >
+                                    <h2 class="white">Rs.440</h2>
+                                </li></a>
+                                
+                                <a href="placeOrder" title="Click to buy!"><li class="item dinner" style="margin-bottom:25px;"><img src="images/coffee.jpg" height="137px" alt="Food" >
+                                    <h2 class="white">Rs.180</h2>
+                                </li></a>
+                                
+                                <a href="placeOrder" title="Click to buy!"><li class="item desert"><img src="images/brownie.jpg" height="136px" alt="Food" >
+                                    <h2 class="white">Rs.250</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"><li class="item breakfast"><img src="images/lamp rice.jpg" alt="Food" >
+                                    <h2 class="white">Rs.380</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"> <li class="item special"><img src="images/spaghetti.jpg" alt="Food" >
+                                    <h2 class="white">Rs.375</h2>
+                                </li></a>
+                                
+                                <a href="placeOrder" title="Click to buy!"><li class="item special"><img src="images/indian noodles.jpg" height="137px" alt="Food" >
+                                    <h2 class="white">Rs.400</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"><li class="item desert"><img src="images/ice cream.jpg" height="137px" alt="Food" >
+                                    <h2 class="white">Rs.150</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"><li class="item special"><img src="images/soup noodles.jpg" height="137px" alt="Food" >
+                                    <h2 class="white">Rs.280</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"><li class="item breakfast"><img src="images/Nasi goreng.jpg" height="137px" alt="Food" >
+                                    <h2 class="white">Rs.200</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!"> <li class="item dinner "><img src="images/Lassi.png" alt="Food" >
+                                    <h2 class="white">Rs220</h2>
+                                </li></a>
+                                <a href="placeOrder" title="Click to buy!">   <li class="item dinner "><img src="images/faluda.jpg" height="286px" alt="Food" >
+                                    <h2 class="white">Rs200</h2>
+                                </li></a>
                             </ul><!-- @end #portfolio -->
                         </div><!-- @end #w -->
                     </div>
                 </div>
             </div>
         </section>
-
-
-        <!-- ============ Our Beer  ============= 
-
-
-        <section id ="beer" class="description_content">
-            <div  class="beer background_content">
-                <h1>Great <span>Place</span> to enjoy</h1>
-            </div>
-            <div class="text-content container">
-                <div class="col-md-5">
-                   <div class="img-section">
-                       <img src="images/beer_spec.jpg" width="100%">
-                   </div>
-                </div>
-                <br>
-                <div class="col-md-6 col-md-offset-1">
-                    <h1>OUR BEER</h1>
-                    <div class="icon-beer fa-2x"></div>
-                    <p class="desc-text">Here at Restaurant we’re all about the love of beer. New and bold flavors enter our doors every week, and we can’t help but show them off. While we enjoy the classics, we’re always passionate about discovering something new, so stop by and experience our craft at its best.</p>
-                </div>
-            </div>
-        </section>
-
-
-     ============ Our Bread  ============= 
-
-
-        <section id="bread" class=" description_content">
-            <div  class="bread background_content">
-                <h1>Our Breakfast <span>Menu</span></h1>
-            </div>
-            <div class="text-content container">
-                <div class="col-md-6">
-                    <h1>OUR BREAD</h1>
-                    <div class="icon-bread fa-2x"></div>
-                    <p class="desc-text">We love the smell of fresh baked bread. Each loaf is handmade at the crack of dawn, using only the simplest of ingredients to bring out smells and flavors that beckon the whole block. Stop by anytime and experience simplicity at its finest.</p>
-                </div>
-                <div class="col-md-6">
-                    <img src="images/bread1.jpg" width="260" alt="Bread">
-                    <img src="images/bread1.jpg" width="260" alt="Bread">
-                </div>
-            </div>
-        </section>-->
-
-
 
         <!-- ============ Featured Dish  ============= -->
 
@@ -323,7 +301,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                 </div>
                 <div class="col-md-4">
                     <span class="social_heading">OR DIAL</span>
-                    <span class="social_info"><a class="color_animation" href="tel:883-335-6524">(941) 883-335-6524</a></span>
+                    <span class="social_info"><a class="color_animation" href="tel:(94) 071-510-3021">(94) 071-510-3021</a></span>
                 </div>
             </div>
         </section>
@@ -332,7 +310,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
 
         <section id="contact">
             <div class="map">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.664063989472!2d91.8316103150038!3d24.909437984030877!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x37505558dd0be6a1%3A0x65c7e47c94b6dc45!2sTechnext!5e0!3m2!1sen!2sbd!4v1444461079802" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.738866015558!2d79.95949391431803!3d6.921788520326328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25721acd59605%3A0x328358bba434cf93!2sChandrika+Kumaratunga+Mawatha!5e0!3m2!1sen!2slk!4v1447908175981" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
             </div>
             <div class="container">
                 <div class="row">
@@ -341,7 +319,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                             <!-- Form Area -->
                             <div class="contact-form">
                                 <!-- Form -->
-                                <form id="contact-us" method="post" action="contact.php">
+                                <form id="contact-us" method="post" action="sendFeedback">
                                     <!-- Left Inputs -->
                                     <div class="col-md-6 ">
                                         <!-- Name -->
@@ -359,7 +337,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                                     <!-- Bottom Submit -->
                                     <div class="relative fullwidth col-xs-12">
                                         <!-- Send Button -->
-                                        <button type="submit" id="submit" name="submit" class="form-btn">Send Message</button>
+                                        <button type="submit" id="submit" name="submit" title="One more step to go!" class="form-btn">Next</button>
                                     </div><!-- End Bottom Submit -->
                                     <!-- Clear -->
                                     <div class="clear"></div>
@@ -376,9 +354,12 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
         <footer class="sub_footer">
             <div class="container">
                 <div class="col-md-4"></div>
-                <div class="col-md-4"><p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
+                <div class="col-md-4">
+                    <p style="font-size: 0.8em; color:#fff;"><strong>© 2015 ElevenOne Foods, (PVT)LTD. All rights reserved.</strong></p>
                 </div>
-                <div class="col-md-4"><p class="sub-footer-text text-center">Built With Care By <a href="#" target="_blank">Us</a></p></div>
+                <div class="col-md-4">
+                    <p class="sub-footer-text text-center">Back to <a href="#top">TOP</a></p>
+                </div>
             </div>
         </footer>
 

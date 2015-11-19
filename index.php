@@ -40,7 +40,7 @@
 		<div id="reg" class="rightBlock">
 			<h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Register with us</h2>
 			<hr>
-			<form class="box" style="margin-top:-10%; background: none; border:none; box-shadow:none;">
+			<form class="box" action="addCustomer" style="margin-top:-10%; background: none; border:none; box-shadow:none;">
 				<fieldset class="boxBody" style="background: none; border:none; margin:0 -10px; box-shadow:none;">
 				  <br>
 				  <input type="text" tabindex="1" placeholder="Enter NIC number" required>
