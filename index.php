@@ -23,10 +23,10 @@
 	</div>
 	<div id="content">
 		<div id="leftBlock">
-			<div id="guestUser"><a href="main.php"><img src="images/expresslogin.png" width="200px"></a>
+			<div id="guestUser"><a href="main.php" title="Go as guest!"><img src="images/expresslogin.png" width="200px"></a>
 					<div class="mid"><strong>Enter As</strong><br>Guest</div>
 			</div>
-			<div id="user"><a href="#" onclick="login()"><img src="images/expresslogin.png" width="200px"></a>
+			<div id="user"><img src="images/expresslogin.png" width="200px" onclick="login()" title="Go, Login!" style="cursor: pointer;">
 					<div class="mid"><strong>Enter As</strong><br>Member</div>
 			</div>		
 		</div>
@@ -38,9 +38,27 @@
 			<h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Register with us</h2>
 			<hr>
 		</div>
-		<div id="login" class="rightBlock" style="display:none">
-			<h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Sign in</h2>
-			<hr>
+		<div id="login" class="ulogin" style="display:none">
+			<!-- <h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Sign in</h2>
+			<hr> -->
+
+				<div style="z-index:10; width:332px; height:300px; margin: 0 auto; margin-top:13%;">
+					<form class="box login">
+					<fieldset class="boxBody">
+						<h2 style="float:left; display:inline;">Member Login</h2>
+						<span title="Click to Dismiss!" style="display: inline; float:right; cursor: pointer;" onclick="dismiss()">| Back</span>
+						<hr>	
+					  <label>Username</label>
+					  <input type="text" tabindex="1" placeholder="" required>
+					  <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
+					  <input type="password" tabindex="2" required>
+					</fieldset>
+					<footer>
+					  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
+					  <input type="submit" class="text-center form-btn form-btn" value="Login" style="width: 100px; float: right;" tabindex="4">
+					</footer>
+					</form>
+				</div>
 		</div>
 	</div>
 
@@ -59,8 +77,12 @@
 	<script type="text/javascript">
 		function login(){
 			document.getElementById('login').style.display = "block";
-			document.getElementById('reg').style.display = "none";
+			document.getElementById('login').style.background = "images/landing_bg.jpg";
 		}
+
+		function dismiss(){
+  			document.getElementById('login').style.display = "none";
+				}	
 	</script>
 
 </body>
