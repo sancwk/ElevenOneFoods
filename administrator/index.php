@@ -1,3 +1,8 @@
+<?php  
+   session_start();
+   ob_start();
+?>  
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,18 +25,18 @@
 		<img src="../images/logo.png" width="500px">
 	</div>
 	<div id="content">
-		<form class="box login" style="margin-top:-10%;">
+		<form class="box login" style="margin-top:-10%;"  method="post">
 			<fieldset class="boxBody">
 				<h2>Administrator Login</h2>
 				<hr>
 			  <label>Username</label>
-			  <input type="text" tabindex="1" placeholder="Admin" required>
+			  <input type="text" name="username" tabindex="1" placeholder="Admin" required>
 			  <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
-			  <input type="password" tabindex="2" required>
+			  <input type="password" name="password" tabindex="2" required>
 			</fieldset>
 			<footer>
 			  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
-			  <input type="submit" class="text-center form-btn form-btn" value="Login" style="width: 100px; float: right;" tabindex="4">
+			  <input type="submit" name="login" class="text-center form-btn form-btn" value="Login" style="width: 100px; float: right;" tabindex="4">
 			</footer>
 		</form>
 	</div>
@@ -49,3 +54,31 @@
 
 </body>
 </html>
+
+<?php  
+      
+    include("../dbConnect.php");  
+      
+    if(isset($_POST['login']))  
+    {  
+        $username=$_POST['username'];  
+        $pass=md5($_POST['password']);  
+      
+        $check_user = "select * from user WHERE username ='$username'AND passwd ='$pass'";  
+      
+        $run = mysqli_query($conn,$check_user);  
+      
+        if(mysqli_num_rows($run))  
+        {  
+            $_SESSION['username']=$username;
+            header('Location: main.php');
+      
+        }  
+        else  
+        {  
+          echo "<script>alert('wrong!')</script>";  
+        }  
+    }
+
+    $conn->close();  
+?>  
