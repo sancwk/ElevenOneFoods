@@ -1,3 +1,9 @@
+<?php  
+   session_start();//session starts here  
+   ob_start();
+?>  
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,31 +37,39 @@
 			</div>		
 		</div>
 
-		
-		
-
 		<div id="reg" class="rightBlock">
 			<h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Register with us</h2>
 			<hr>
+			<form class="box" style="margin-top:-10%; background: none; border:none; box-shadow:none;">
+				<fieldset class="boxBody" style="background: none; border:none; margin:0 -10px; box-shadow:none;">
+				  <br>
+				  <input type="text" tabindex="1" placeholder="Enter NIC number" required>
+				  <br>
+				  <input type="text" tabindex="2" placeholder="Pick an username" required>
+				</fieldset>
+				<footer style="margin-top:-10px;">
+				  <input type="submit" class="text-center form-btn form-btn" value="Next" style="width: 100px; float: right;" tabindex="4">
+				</footer>
+			</form>
 		</div>
 		<div id="login" class="ulogin" style="display:none">
 			<!-- <h2 class="top-title" style="font-size:2.4em; color:#000; text-align:center;">Sign in</h2>
 			<hr> -->
 
 				<div style="z-index:10; width:332px; height:300px; margin: 0 auto; margin-top:13%;">
-					<form class="box login">
+					<form class="box login" method="post">
 					<fieldset class="boxBody">
 						<h2 style="float:left; display:inline;">Member Login</h2>
 						<span title="Click to Dismiss!" style="display: inline; float:right; cursor: pointer;" onclick="dismiss()">| Back</span>
 						<hr>	
 					  <label>Username</label>
-					  <input type="text" tabindex="1" placeholder="" required>
+					  <input type="text" name="username" tabindex="1" placeholder="" required>
 					  <label><a href="#" class="rLink" tabindex="5">Forget your password?</a>Password</label>
-					  <input type="password" tabindex="2" required>
+					  <input type="password" name="password" tabindex="2" required>
 					</fieldset>
 					<footer>
 					  <label><input type="checkbox" tabindex="3">Keep me logged in</label>
-					  <input type="submit" class="text-center form-btn form-btn" value="Login" style="width: 100px; float: right;" tabindex="4">
+					  <input type="submit" class="text-center form-btn form-btn" name="login" value="Login" style="width: 100px; float: right;" tabindex="4">
 					</footer>
 					</form>
 				</div>
@@ -87,3 +101,31 @@
 
 </body>
 </html>
+
+<?php  
+      
+    include("dbConnect.php");  
+      
+    if(isset($_POST['login']))  
+    {  
+        $username=$_POST['username'];  
+        $pass=md5($_POST['password']);  
+      
+        $check_user = "select * from user WHERE username ='$username'AND passwd ='$pass'";  
+      
+        $run = mysqli_query($conn,$check_user);  
+      
+        if(mysqli_num_rows($run))  
+        {  
+            $_SESSION['username']=$username;
+            header('Location: main.php');
+      
+        }  
+        else  
+        {  
+          echo "<script>alert('wrong!')</script>";  
+        }  
+    }
+
+    $conn->close();  
+?>  
