@@ -235,7 +235,7 @@ Our aim is to provide a mix fusion of delicious dishes around the world combinin
                     <!-- Form Area -->
                     <div class="contact-form">
                         <!-- Form -->
-                        <form id="contact-us" method="post" action="reserve.php">
+                        <form id="contact-us" method="post" action="#">
                             <!-- Left Inputs -->
                             <div class="container">
                                 <div class="row">
